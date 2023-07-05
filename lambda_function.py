@@ -4,14 +4,14 @@ from selenium import webdriver
 
 def lambda_handler():
     # Authenticate using the API key and secret
-    api_key = 'lUUv61DUiwfUfifVgY3Qt9wjG'
-    api_key_secret = 'epCiisJGQhwOXwsqc88MYtbs6gFCtpwyM9xJijz1I1FOz68aYA'
-    access_token = '1611535424098562048-3cbVRqF71AnOtOnnvNGq6tcgxTc9B9'
-    access_token_secret = 'yl3Fg7WkENxz4uzdi3KUOHOoBctio6niTaIOHEuZYCdXz'
+    api_key = 'YOUR-API-KEY'
+    api_key_secret = 'YOUR-API-KEY-SECRET'
+    access_token = 'ACCESS-TOKEN'
+    access_token_secret = 'ACCESS-TOKEN-SECRET'
     auth = tweepy.OAuth1UserHandler(api_key, api_key_secret, access_token, access_token_secret)
     api = tweepy.API(auth)
-    # Client ID: UnhfWFJCaTZHeWhBQ3lpQVh0TkI6MTpjaQ
-    # Client Secret: 3GwlbZpF-49lLh8uHH6vh7TIo9uhaAjWK4ln91jN5wDeXKfmqo
+    # Client ID: YOUR-CLIENT-ID
+    # Client Secret: CLIENT-ID-SECRET
 
     try:
         # Create a ChromeOptions instance to set the headless flag
