@@ -10,8 +10,8 @@ def lambda_handler():
     access_token_secret = 'ACCESS-TOKEN-SECRET'
     auth = tweepy.OAuth1UserHandler(api_key, api_key_secret, access_token, access_token_secret)
     api = tweepy.API(auth)
-    # Client ID: YOUR-CLIENT-ID
-    # Client Secret: CLIENT-ID-SECRET
+    Client ID: YOUR-CLIENT-ID
+    Client Secret: CLIENT-ID-SECRET
 
     try:
         # Create a ChromeOptions instance to set the headless flag
